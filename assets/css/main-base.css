@@ -1,0 +1,728 @@
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('../fonts/fonts/DINPro-CondensedBold.woff2') format('woff2'),
+      url('../fonts/fonts/DINPro-CondensedBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('../fonts/fonts/DINPro-CondensedLightItalic.woff2') format('woff2'),
+      url('../fonts/fonts/DINPro-CondensedLightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('../fonts/fonts/DINPro-CondensedItalic.woff2') format('woff2'),
+      url('../fonts/fonts/DINPro-CondensedItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('../fonts/fonts/DINPro-CondensedMediumItalic.woff2') format('woff2'),
+      url('../fonts/fonts/DINPro-CondensedMediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI.woff2') format('woff2'),
+      url('../fonts/SegoeUI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Cond';
+    src: url('../fonts/fonts/DINPro-CondensedMedium.woff2') format('woff2'),
+        url('../fonts/fonts/DINPro-CondensedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Cond';
+    src: url('../fonts/fonts/DINPro-CondensedLight.woff2') format('woff2'),
+        url('../fonts/fonts/DINPro-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('../fonts/fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../fonts/fonts/DINPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('../fonts/fonts/DINPro-Light.woff2') format('woff2'),
+        url('../fonts/fonts/DINPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* img{
+    width: 100%;
+    height: 100%;
+} */
+body h1, h2{
+    font-family: 'DIN Pro Cond';
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    font-style: italic;
+}
+
+body strong{
+    font-weight: bold;
+    font-style: italic;
+    font-family: "DIN Pro Cond";
+
+}
+body .primary-heading{
+    font-family: 'DIN Pro Cond';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+}
+body .secondary-heading{
+    font-family: 'DIN Pro Cond';
+    font-style: italic;
+    font-weight:normal;
+    font-size: 38px;
+    line-height: 45px;
+}
+body .normal-heading{
+    font-family: 'DIN Pro Cond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+body h3, .h3{
+    font-family: 'DIN Pro Cond';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+body .light-text, .dark-text{
+    font-family: 'DIN Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #96AAB8;
+}
+.dark-text{
+    color: #112B36;
+    font-weight: 500;
+
+}
+body p, a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+body a{
+    display: inline-block;
+    text-decoration: none;
+
+}
+ol, ul:not([class]){
+    list-style: none;
+    text-align: left;
+}
+ul:not([class]) > li:not([class]){
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+ul:not([class]) > li:not([class]):not(:last-child){
+    margin-right: 30px;
+}
+ul:not([class]) > li:not([class]):hover{
+    border-bottom: 2px solid #A30023;
+
+}
+ul:not([class]) > li:not([class]) > a{
+    text-decoration: none;
+}
+ul >li >ul{
+    list-style: none;
+}
+ul >li >ul{
+    list-style: none;    
+    }
+    ul >li >ul >li a{
+        font-weight: bold;
+        color: #fff!important;
+        text-decoration: none;
+    }
+    ul >li >ul >li:not(:last-child){
+        padding-bottom:5px;
+    }
+    ul >li >ul > .sub-dropdown{
+        color: #fff!important;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: 700;
+    }
+    ul >li >ul > .sub-dropdown > ul{
+        list-style: none;
+        margin-left: 16px;
+    }
+    ul >li >ul .sub-dropdown > ul li{
+        padding: 16px 0;
+        border-bottom: none !important;
+        
+    }
+    ul >li >ul >li >ul li >a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        transition: 0.3s all;
+        color: #fff!important;
+
+    }
+    ul >li >ul >li >ul li >a:hover{
+        opacity: 0.9;
+    }
+    
+body button:not([class]), .btn, .blue-btn, .btn-red{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 29px;
+    background: #112B36;
+    color: #FFFFFF;
+    transition: 0.3s all;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.blue-btn:hover{
+    background-color: #A30023;
+}
+.btn-red{
+    background: #A30023;
+}
+.btn-red:hover{
+    background: #112B36;
+
+}
+.col-top-heading{
+    background-color: #112b36;
+    padding: 3px 10px;
+    width: max-content;
+    color: #fff;
+    max-width: 250px;
+}
+/* ---------  conatiner ------------*/
+.container{
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.serch-icon-btn{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: #112B36;
+    border: none;
+    outline: none;
+    transition: 0.3s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.serch-icon-btn .icon-wrapper{
+    width: 27px;
+    height: 27px;
+    background-image: url('../images/search-btn-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.serch-icon-btn:hover{
+    background-color: #A30023;
+}
+
+/* side-gender-card" */
+.side-gender-card{
+    padding: 18px;
+    box-shadow: -1px 3px 10px 1px rgb(0 0 0 / 7%);
+}
+.side-gender-card .car-row1{
+    display: flex;
+    margin-bottom: 18px;
+}
+.side-gender-card .car-row1 .content {
+    position: relative;
+}
+.side-gender-card .car-row1 .gender-img-wrapper{
+    width: 125px;
+    height: 125px;
+    margin-right: 18px;
+}
+.side-gender-card .car-row1 .gender-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.side-gender-card .car-row1 .content h3{
+    max-width: 190px;
+    margin-bottom: 10px;
+}
+.side-gender-card .car-row1 .content h3 span{
+    color: #96AAB8;
+}
+.side-gender-card .car-row1 .content .para-after{
+    font-weight: 500;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+.side-gender-card .car-row1 .content .para-after::after{
+    content: '';
+    width: 11px;
+    height: 15px;
+    background-image: url('../images/card-location-icon.svg');
+    position: absolute;
+    left: -19px;
+}
+.side-gender-card .content .text{
+    color: #96AAB8;
+}
+
+.car-row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.car-row2 .card-phone{
+    /* margin-left: 20px; */
+    position: relative;
+    font-family: 'DIN Pro cond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #112B36;
+    margin-left: 15px;
+}
+.car-row2 .card-phone a::after{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/card-phones-icons.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -30px;
+    top: 5px;
+
+}
+.card-icons{
+    position: relative;
+    right: 18px;
+    display: flex;
+}
+.card-icons .c-btn:not(:last-child){
+margin-right: 10px;
+}
+.btn-mes, .btn-gender{
+    width: 46px;
+    height: 46px;
+    background-color: #112B36;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.btn-mes:hover{
+    background-color: #A30023;
+} 
+.btn-gender{
+    background-color: #A30023;
+}
+.btn-gender:hover{
+    background-color: #112B36;
+
+}
+.btn-mes .icons-wrapper{
+    width: 20px;
+    height: 18px;
+    margin: 0 auto;
+}.btn-gender .icons-gender-wrapper{
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+}
+
+.btn-mes .icons-wrapper img, .btn-gender .icons-gender-wrapper img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+ .card-hidden-text{
+    background-color: #112B36;
+    padding: 9px;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    width: max-content;
+    right: -36px;
+    position: absolute;
+    bottom: 60px;
+    opacity: 0;
+    transition: 0.3s all;
+
+}
+.card-hidden-text::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #112b36 transparent transparent transparent;
+}
+
+.btn-gender:hover .card-hidden-text{
+    opacity: 1;
+
+
+}
+
+.overlay-card-btn   {
+    font-family: 'DIN Pro Cond';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: #96AAB8;
+    padding: 8px 19px;
+    text-align: center;
+    transition: 0.3s all;
+    cursor: pointer;
+    
+}
+
+
+.selection-card-btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #96AAB8;
+    padding: 8px 19px;
+    text-align: center;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.overlay-card-btn:hover,
+.selection-card-btn:hover{
+    background-color: #112B36;
+}
+ 
+
+body .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*_________________________ Base ______________________*/
+
+
+
+/*_________________________ table base style ______________________*/
+
+
+table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+table .top-row{
+    background-color: #FAFAFA;
+}
+table th{
+    color: #96AAB8; 
+    text-align: center; 
+    padding: 16px 10px;
+    font-family: 'DIN Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #96AAB8;
+    letter-spacing: 1px;
+    
+}
+
+table tr td{
+    font-family: 'DIN Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #112B36;
+    text-align: center; 
+    padding: 16px 10px;
+    /* letter-spacing: 1px; */
+    
+
+}
+.row{
+    transition: 0.3s all;
+
+}
+.row:hover{
+    background-color: #FFFFFF;
+    box-shadow: -1px 6px 10px 1px rgb(0 0 0 / 7%);
+    cursor: pointer;
+}
+
+*:focus{
+    outline: none;
+}
+/*--------- form _---------*/
+
+.form{
+    width: 100%;
+    display: flex;
+}
+.field-group{
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+}
+.field-group label:not([class]), .label{
+    background-color: #fff;
+    padding:16px 1px 13px 8px;
+    border: none;
+    
+}
+
+.field-group select{
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    background-image: url('../images/form-arrow.svg');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 22px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #112B36;
+    border-right: 1px solid #EBEBEB;
+}
+
+.field-group input{
+    width: 100%;
+    padding: 17px 20px;
+   outline: none;
+   border: none;
+   text-transform: uppercase;
+
+
+}
+.field-group input[type = text]::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #112B36;
+    
+}
+.field-group .lable-right{
+    background-color: #fff;
+    padding: 15px 15px 14px 15px;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid #EBEBEB;
+
+}
+.lable-icon-wrapper{
+    /* width: 21px; */
+    height: 20px;
+}
+label img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.location-icon-wrapper{
+    width: 14px;
+    height: 20px;
+}
+.lable-icon-3{
+    background-color: #fff;
+    padding: 16px 0px 13px 17px;
+    border: none;
+}
+
+.field-group input[type = submit]{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 17px 29px;
+    background-color: #A30023;
+    color: #FFFFFF;
+    transition: 0.3s all;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.field-group input[type = submit]:hover{
+    background-color: #78021c;
+
+}
+
+
+/*------------------- important section ---------------------*/
+.imp-content {
+    padding: 5px 5px 15px 5px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+  
+
+}
+.imp-content .important-main-heading{
+    max-width:142px;
+    font-family: 'DIN Pro Cond';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #D2DFE8;
+
+    /* position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    bottom: -60%; */
+
+}
+.imp-content .secondayHead-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.imp-content .secondayHead-details .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center
+}
+
+.imp-content .secondayHead-details .content  h3{
+    max-width: 185px;
+    margin-bottom: 13px;
+}
+.imp-content .secondayHead-details .content p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #96AAB8;
+    margin-bottom: 30px;
+}
+.imp-content .secondayHead-details .imp-img-wrapper{
+    width: 70px;
+}
+.imp-content .secondayHead-details .imp-img-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
