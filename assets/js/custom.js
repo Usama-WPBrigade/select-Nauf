@@ -1,5 +1,12 @@
 
 $(document).ready(function () {
+  $(".burger_icon").on('click', function () {
+    $("#menu").slideToggle();
+    $("body").toggleClass("overflowbody")
+    $(".burger_icon").toggleClass("openmenu")
+  });
+
+
   var swiper = new Swiper(".notreSlider", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -121,6 +128,19 @@ $(document).ready(function () {
           navigation: {
             nextEl: ".bottom-col  .swiper-button-next",
             prevEl: ".bottom-col  .swiper-button-prev",
+          },
+          breakpoints: {
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+
+            },
+            767: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+
+            },
+
           }
         });
       }
@@ -137,12 +157,12 @@ $(document).ready(function () {
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".all-cards-wrapper .swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".all-cards-wrapper  .swiper-button-next",
+      prevEl: ".all-cards-wrapper  .swiper-button-prev",
     },
     breakpoints: {
       480: {
@@ -161,6 +181,43 @@ $(document).ready(function () {
   });
 
 
+  // let importantslider;
+  // $(window).on("load resize", function () {
+  //   if (window.matchMedia("(max-width: 1024px)").matches) {
+  //     // $(".Rcard_wrapper").css("background-color", "gray");
+  //     if (importantslider?.destroyed === true || !importantslider) {
+  //       importantslider = new Swiper(".important-slider-wrapper .importantSlider", {
+  //         slidesPerView: 1,
+  //         loop: true,
+  //         navigation: {
+  //           nextEl: ".important-slider-wrapper  .swiper-button-next",
+  //           prevEl: ".important-slider-wrapper  .swiper-button-prev",
+  //         },
+  //         breakpoints: {
+  //           480: {
+  //             slidesPerView: 1,
+  //             spaceBetween: 30,
+
+  //           },
+  //           767: {
+  //             slidesPerView: 1,
+  //             spaceBetween: 30,
+
+  //           },
+  //           920: {
+  //             slidesPerView: 1,
+  //             spaceBetween: 30,
+
+  //           },
+
+  //         }
+  //       });
+  //     }
+  //   }
+  //   else {
+  //     if (importantslider !== undefined) importantslider.destroy(true, true);
+  //   }
+  // });
 
 });
 

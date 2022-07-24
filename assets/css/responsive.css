@@ -120,6 +120,45 @@ display: block;
 .bottom-form-conatiner .form-bottom-field-group .field-group select{
     background-position-x: 97%;
 }
+.accredition-link .arrow-btn{
+    left: 5px;
+}
+.botton-slider-accordin-wrapper .bottom-col .bottomSlider .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 99%;
+    margin: 0 auto;
+}
+.botton-slider-accordin-wrapper{
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+}
+.botton-slider-accordin-wrapper .bottom-col{
+    margin: 0;
+    width: 100%;
+    margin: 0;
+    height: 300px;
+}
+.col-accordine{
+margin-top: 50px;
+}
+.desktop-section{
+    text-align: center;
+}
+.Accreditation-wrapper p{
+    max-width: 100%;
+}
+.footer{
+    margin-top: 50px;
+}
+.footer .container .footer-col-4{
+    display: none;
+}
+.footer > .container > div, .footer > .container > ul{
+    width: 33.33%;
+}
 }
 @media screen and (max-width:920px) {
     .menu-btn{
@@ -171,6 +210,8 @@ display: block;
         margin-right: 0;
         margin-bottom: 31px;
     }
+   
+    
 }
 @media screen and (max-width:820px) {
     .vous-wrapper .container{
@@ -195,6 +236,29 @@ display: block;
 }
 
 @media screen and (max-width:767px) {
+    .header{
+        padding: 0;
+    }
+    .header .container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .header .container .logo-col{
+        padding: 16px 15px;
+        border-bottom: 1px solid #96AAB8;
+    }
+    .menu{
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        padding: 50px 0 0;
+
+    }
+    .menu >ul{
+        padding: 0px 15px 0;
+
+    }
+
     .hidden-desk{
         display: block;
     }
@@ -409,5 +473,100 @@ display: block;
     .all-cards-wrapper{
         padding: 0 10px;
     }
-  
+    .rej-section-wrapper .container .hand-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rej-section-wrapper .container .hand-section .rej-col{
+        width: 100%;
+        text-align: center;
+    }
+    .rej-section-wrapper .container .hand-section .col-right{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    }
+    .rej-section-wrapper{
+        margin-top: 0;
+    }
+    .rej-section-wrapper .container .hand-section .rej-col p,.rej-section-wrapper .container .hand-section .rej-col h3{
+        display: none;
+    }
+    .col-accordine{
+        margin-top: 100px;
+        }
+        .desktop-section{
+            display: none;
+        }
+        .botton-slider-accordin-wrapper .bottom-col{
+            height: auto;
+        }
+        .botton-slider-accordin-wrapper .col-slider .swiper-slide{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            height: auto;
+        }
+        .col-slider .swiper-slide .slid-content .post-text{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }.bottom-col  .swiper-button-next, .bottom-col  .swiper-button-prev{
+            display: block;
+        
+        }
+        .col-slider .swiper-slide .slid-content{
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 230px;
+        }
+        .botton-slider-accordin-wrapper .bottom-col .bottomSlider .swiper-wrapper{
+            width: 100%;
+        }
+        .mobile-accordin-wrapper{
+            display: block;
+        }
+.footer .container .footer-list{
+    display: none;
+        
+}
+
+.footer > .container > div, .footer > .container > ul{
+    width: 50%;
+}
+}
+@media screen and (max-width:520px) {
+    .footer .container{
+        flex-direction:column;
+    }
+    .footer > .container > div, .footer > .container > ul{
+    width: 100%;
+    }
+    .logo-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-box .footer-logo{
+        text-align: center;
+    }
+    .logo-box div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-box div div{
+            display: flex;
+        flex-direction: column;
+    
+    }
+    
 }

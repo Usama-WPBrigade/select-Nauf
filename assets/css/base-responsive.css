@@ -31,3 +31,9 @@ body .secondary-heading{
 }
     
 }
+@media screen and (max-width:767px) {
+
+ul:not([class]) > li:not([class]){
+    display: block;
+}
+}

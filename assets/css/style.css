@@ -1703,3 +1703,15 @@ margin-top: 15px;
  .second-footer-col{
     padding-left: 7px;
  }
+
+ .logo-box{
+    display: block;
+}
+
+.logo-box div{
+    display: block;
+}
+
+.logo-box div div{
+        display: block;
+}
