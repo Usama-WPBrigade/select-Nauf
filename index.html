@@ -15,10 +15,10 @@
 </head>
 <body>
   <!------   Notification Section --------->
-  <section class="notification_wrapper">
+  <section class="notification_wrapper" id="notification_wrapper">
       <div class="container">
         <p>Ce site utilise des cookies pour une meilleure expérience utilisateur. En utilisant selectneuf.com, vous acceptez notre utilisation des cookies </p>
-        <div class="notiification-close-btn">
+        <div class="notiification-close-btn" onclick="close_notification()">
             <button class="close-btn"></button>
         </div>
     </div>
@@ -41,9 +41,29 @@
 
   <header class="header">
       <div class="container">
-            <a href=""  class="logo-wrapper">
+        <div class="logo-col">
+            <a href="#" class="logo-wrapper">
                 <img src="assets/images/site-logo.svg" alt="">
             </a>
+
+           <div class="mobile-menu-icons">
+                <div class="inner-icon-wrapper">
+                    <div class="mobile-star-wrapper">
+                        <img src="assets/images/mobile-star-icon.svg" alt="">
+                    </div>
+                    <div class="mobile-lock-wrapper">
+                        <img src="assets/images/mobile-lock-icon.svg" alt="">
+                    </div>
+                    <div class="burger_icon">
+                        <div class="menu_bar menu_bar1"></div>
+                        <div class="menu_bar menu_bar2"></div>
+                        <div class="menu_bar menu_bar3"></div>
+                    </div>
+                </div>
+           </div>
+
+        </div>
+            
          
           <nav class="menu">
             <ul>
@@ -69,7 +89,7 @@
                 <li><a href="#">S’INFORMER</a></li>
                 <li><a href="#">SIMULER</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <a class="blue-btn">NOUS REJOINDRE</a>
+                <a class="blue-btn menu-btn">NOUS REJOINDRE</a>
             </ul>
           </nav>
       </div>
@@ -120,7 +140,7 @@
 
       <!--- Hero bottom text---->
       <div class="hero-bottom-content">
-        <h2> SOUHAITE ACHETER UN LOGEMENT NEUF</h2>
+        <h2> JS SOUHAITE ACHETER UN LOGEMENT NEUF</h2>
         <div class="hero-arrow-section">
             <span>POUR Y VIVRE</span>
             <span>POUR LE LOUER</span>
@@ -147,13 +167,16 @@
                             
                             <div class="NS-overlay">
                                 <h3 class="voir-text">VOIR EN DÉTAIL</h3>
-                                <div class="ajouter-text">
+                                <!-- <div class="ajouter-text">
                                     <p>Ajouter aux favoris</p>
-                                </div>
+                                </div> -->
                             </div>
                             <!---Slider Star icon -->
                             <div class="Nsstar-icon-wrapper">
                                 <div class="NS-star"></div>
+                                <div class="ajouter-text">
+                                    <span class="text">Tracer sur la carte</span>
+                                </div>
                             </div>
                         </div>
                         <!----------------- Notre Slider Content Part ------------>
@@ -180,13 +203,16 @@
                             
                             <div class="NS-overlay">
                                 <h3 class="voir-text">VOIR EN DÉTAIL</h3>
-                                <div class="ajouter-text">
+                                <!-- <div class="ajouter-text">
                                     <p>Ajouter aux favoris</p>
-                                </div>
+                                </div> -->
                             </div>
                             <!---Slider Star icon -->
                             <div class="Nsstar-icon-wrapper">
                                 <div class="NS-star"></div>
+                                <div class="ajouter-text">
+                                    <span class="text">Tracer sur la carte</span>
+                                </div>
                             </div>
                         </div>
                         <!----------------- Notre Slider Content Part ------------>
@@ -213,13 +239,14 @@
                             
                             <div class="NS-overlay">
                                 <h3 class="voir-text">VOIR EN DÉTAIL</h3>
-                                <div class="ajouter-text">
-                                    <p>Ajouter aux favoris</p>
-                                </div>
+                                
                             </div>
                             <!---Slider Star icon -->
                             <div class="Nsstar-icon-wrapper">
                                 <div class="NS-star"></div>
+                                <div class="ajouter-text">
+                                    <span class="text">Tracer sur la carte</span>
+                                </div>
                             </div>
                         </div>
                         <!----------------- Notre Slider Content Part ------------>
@@ -246,13 +273,14 @@
                             
                             <div class="NS-overlay">
                                 <h3 class="voir-text">VOIR EN DÉTAIL</h3>
-                                <div class="ajouter-text">
-                                    <p>Ajouter aux favoris</p>
-                                </div>
+                               
                             </div>
                             <!---Slider Star icon -->
                             <div class="Nsstar-icon-wrapper">
                                 <div class="NS-star"></div>
+                                <div class="ajouter-text">
+                                    <span class="text">Tracer sur la carte</span>
+                                </div>
                             </div>
                         </div>
                         <!----------------- Notre Slider Content Part ------------>
@@ -357,13 +385,15 @@
              <h3 class="basic-text">VOUS ÊTES EN COUPLE ET VOUS AVEZ ENVIE D’ACHETER À DEUX ?</h3>
              <h3 class="basic-text">VOUS SOUHAITEZ DÉMÉNAGER CAR VOTRE FAMILLE S’AGRANDIT ?</h3>
              <p>Nous étudions vos possibilités de financement (PTZ, prêt action logement 1%,prêt d’accession sociale).</p>
+             <a href="#" class="overlay-card-btn  card-btn hidden-desk">FAIRE UNE SIMULATION EN LIGNE</a>
+             
              <a href="#" class="btn-red">DEMANDER UNE EXPERTISE FINANCIÈRE</a>
         </div>
         <div class="col-right col">
             <div class="image-wrapper"><img src="assets/images/col-img.jpg" alt=""></div>
             <div class="overlay-content">
                 <h2><strong>PRÊT À TAUX 0%</strong> ÊTES-VOUS ÉLIGIBLE ?</h2>
-                <a href="#" class="overlay-card-btn  card-btn">FAIRE UNE SIMULATION EN LIGNE</a>
+                <a href="#" class="overlay-card-btn  card-btn ">FAIRE UNE SIMULATION EN LIGNE</a>
             </div>
         </div>
       </div>
@@ -398,8 +428,8 @@
                 <div class="img-wrapper"><img src="assets/images/euro-icon.svg" alt=""></div>
                 <div class="text">
                     <h3>RÉDUCTIONS D'IMPÔTS SIGNIFICATIVES</h3>
-                    <p>Vous souhaitez être conseillé dans le choix
-                        du meilleur dispositif fiscal vous concernant ? </p>
+                    <p>Acheter du neuf c’est faire une acquisition très
+                        encadrée légalement avec un paiement échelonné.</p>
                 </div>
           </div>
           <!--  2  -->
@@ -1197,6 +1227,7 @@
     </ul>
   </footer>
 
+  <section style="min-height: 300px"></section>
   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
   <script src="assets/js/swiper.js"></script>

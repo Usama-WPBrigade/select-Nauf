@@ -1,4 +1,6 @@
 @import url('./main-base.css');
+@import url('./base-responsive.css');
+
 
 /*__------------------------------------------------------------------_*/
 /*_________________________ Custom Styling ______________________*/
@@ -8,7 +10,7 @@
 /* ---------  Notification Section ------------*/
 .notification_wrapper{
     background-color: #112b36;
-    padding: 21px 0;
+    padding: 22px 0;
     position: relative;
    
 }
@@ -27,12 +29,12 @@
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    padding: 0px 50px 0 0;
+    padding: 0px 50px 0 50px;
 }
 
 .notiification-close-btn{
     position: absolute;
-    right: 5%;
+    right: 2%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -51,7 +53,7 @@
 
 /* ---------  selection Section ------------*/
 .selection-wrapper{
-    padding: 6px 0;
+    padding: 7px 0;
 }
 .selection-wrapper .container{
     display: flex;
@@ -60,7 +62,7 @@
 }
 
 .selection-wrapper .container .select_wrapper:not(:last-child){
-    margin-right: 45px;
+    margin-right: 52px;
 }
 
 .selection-wrapper .container .select_wrapper p{
@@ -82,7 +84,7 @@
     height:14px;
     background-image: url('../images/start.svg');
     position: absolute;
-    left: -20px;
+    left: -22px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,7 +104,9 @@
 
 /* ---------  Header Section ------------*/
 .header{
-    padding: 15px 0;
+    padding: 16px 0;
+    background-color: #fff;
+    z-index: 100;
 }
 .header .container{
     display: flex;
@@ -110,13 +114,16 @@
     align-items: center;
     /* border: 1px solid red; */
 }
-.header .container .logo_wrapper{
+.header .container .logo-wrapper{
     width:163px;
     height:57px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-top:2px;
 }
-.header .container .logo_wrapper img{
+.header .container .logo-wrapper img{
     object-fit: contain;
+    width: 100%;
 }
 .header .container .menu ul >li >a{
   color: #112B36;  
@@ -127,7 +134,7 @@ header .container .menu ul #dropdown{
     header .container .menu ul #dropdown .dropdown_content{
         width: 257px;
         position: absolute;
-        top:32px;
+        top:56px;
         background: #B60529;
         border-radius: 0px 0px 3px 3px;
         padding: 24px 20px;
@@ -142,28 +149,36 @@ header .container .menu ul #dropdown:hover .dropdown_content{
 header{
     border-bottom: 1px solid rgba(128, 128, 128, 0.357);
 }
+.mobile-menu-icons{
+    display: none;
+}
 
 /* --------------------- Hero section Section----------------------*/
 .hero-wrapper{
     height: 790px;
-    background:linear-gradient(298deg,
-    #112B36 50%,
+    background:linear-gradient(295deg,
+    #112B36 50.5%,
       rgba(0, 0, 0, 0) 50%
     ),
     url("../images/hero-banner.jpg") center no-repeat;
     background-size: cover;
     position: relative;
     padding: 80px 0;
+    display: flex;
 }
 .hero-wrapper .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 15px;
+    /* padding: 80px 15px; */
+    width: 100%;
+    margin-top: 120px;
 }
 .hero-wrapper .container h1{
     color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
 }
 
 .hero-wrapper .container h1 .immo{
@@ -171,7 +186,7 @@ header{
 }
 .hero-wrapper .container h3{
     color: #fff;
-    margin-bottom: 61px;
+    margin-bottom: 62px;
 }
 .lable-right{
     position: relative;
@@ -187,8 +202,8 @@ header{
     line-height: 16px;
     color: #FFFFFF;
     width: 133px;
-    top: -26px;
-    left: -47px;
+    top: -23px;
+    left: -44px;
     transition: 0.3s all;
     opacity: 0;
 }
@@ -200,7 +215,7 @@ header{
     -webkit-transform: translate(-50%);
     transform: translate(-50%);
     margin-left: 3px;
-    border-width: 8px;
+    border-width: 7px;
     border-style: solid;
     border-color: #112b36 transparent transparent transparent;
 }
@@ -211,11 +226,15 @@ header{
 }
 
 .form-wrapper{
-    margin-bottom: 200px;
+    margin-bottom: 163px;
+    padding: 0 15px;
 }
 .hero-bottom-content{
     color: #D2DFE8;
     margin-left: auto;
+    position: relative;
+    left: 17px;
+    top: 2px;
 }
 .hero-bottom-content span{
     font-family: 'DIN Pro cond';
@@ -231,7 +250,7 @@ header{
     justify-content: space-between;
 }
 .hero-arrow-section span:first-child{
-    margin-left: 30px;
+    margin-left: 34px;
 }
 .hero-arrow-section span{
     position: relative;
@@ -245,15 +264,15 @@ header{
     background-repeat: no-repeat;
     position: absolute;
     transform: translateX(-50%);
-    left: 50%;
-    bottom: -30%;
+    left: 55%;
+    bottom: -59%;
 }
 
 
 /* --------------------- Notre Section----------------------*/
 
 .notre-wrapper{
-    padding: 80px 0;
+    padding: 88px 0;
     text-align: center;
 }
 .notre-wrapper .container h2{
@@ -352,6 +371,7 @@ header{
     transition: 0.3s all;
 
   }
+
   .NS-star::after{
     content: '';
     width: 17px;
@@ -365,19 +385,22 @@ header{
   }
 
 
-.ajouter-text{
+  .Nsstar-icon-wrapper  .ajouter-text{
     color: #fff;
     padding: 6px 10px;
     background-color:#112B36;
-    position: relative;
-    left: 0%;
-    top: 10px;
-    opacity: 0;
+    position: absolute;
+    /* left: 0%;
+    top: 10px; */
+    opacity: 1;
     transition: 0.3s all ease-in-out;
     transform: translate(72%);
+    top: -50px;
+    left: -210px;
+    opacity: 0;
 
 }
-.ajouter-text::after{
+.Nsstar-icon-wrapper  .ajouter-text .text::after{
     content: "";
     position: absolute;
     top: 100%;
@@ -389,9 +412,8 @@ header{
     border-style: solid;
     border-color: #112b36 transparent transparent transparent;
 }
-.Nsstar-icon-wrapper:hover
-.ajouter-text{
-    background-color: #A30023;
+.Nsstar-icon-wrapper:hover .ajouter-text{
+    opacity: 1
 }
 
 
@@ -442,6 +464,8 @@ header{
     width: 100%;
     border-bottom: 2px solid #41383900;
     padding-bottom: 16px;
+    padding-bottom: 14px;
+    margin-top: -26px;
 }
 .notre-wrapper .notre-slider-wrapper .swiper .swiper-slide:hover 
 .content-part {
@@ -455,7 +479,7 @@ header{
 .notre-slider-wrapper .swiper-button-next, .notre-slider-wrapper .swiper-button-prev {
     position: absolute;
     transform: translateY(-50%);
-    top: 40%;
+    top: 42%;
 
 }
 .notre-slider-wrapper .swiper-button-next:hover, .notre-slider-wrapper .swiper-button-prev:hover {
@@ -480,7 +504,7 @@ header{
 /*--------- SELECTNEUF Section ----------*/
 .select-neuf-wrapper{
     text-align: center;
-    padding: 80px 0;
+    padding: 77px 0;
     
 }
 .select-neuf-wrapper .container h3{
@@ -488,11 +512,11 @@ header{
     max-width: 468px;
 }
 .SelectNeuf-card-wrapper{
-    margin-top: 80px;
+    margin-top: 62px;
 }
 .SelectNeuf-card-wrapper .SelectNeufSlder .swiper-wrapper{
-    width: calc(100% + 39px);
-    margin: 0 -20px;
+    width: calc(100% + 32px);
+    margin: 0 -16px;
 }
  .SelectNeuf-card-wrapper .swiper-slide {
     text-align: center;
@@ -501,8 +525,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(25% - 40px);
-    margin: 0 20px;
+    width: calc(25% - 32px);
+    margin: 0 16px;
     flex-direction: column;
     height: auto;
     padding: 20px 10px;
@@ -548,7 +572,7 @@ header{
 
   /*----------------------------- vous Section  --------------------------*/
   .vous-wrapper{
-      padding: 80px 0;
+      padding: 69px 0;
   }
   .vous-wrapper .container{
       display: flex;
@@ -558,7 +582,10 @@ header{
       padding-right: 40px;
       width: 50%;
   }
-  
+  .vous-wrapper .container .col-left .col-top-heading{
+  padding: 2px 10px;
+  margin-bottom: 10px;
+}
   .vous-wrapper .container .col-left .main-heading{
       margin-bottom: 20px;
       /* max-width: 540px; */
@@ -573,16 +600,14 @@ header{
     margin-top: 31px;
 }
 .vous-wrapper .container .col-left a{
-    margin-top: 39px;
+    margin-top: 26px;
+    padding: 12px 24px;
 }
 
 .vous-wrapper .container .col-right {
     position: relative;
 } 
 
-.col{
-    width: 50%;
-}
 .image-wrapper{
     max-height: 460px;
     width: 100%;
@@ -602,9 +627,10 @@ header{
 }
  .overlay-content{
     position: absolute;
-    height: 100%;
+    max-height: 100%;
     width: 100%;
     top: 0;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -615,9 +641,12 @@ header{
  .overlay-content h2{
     max-width: 307px;
     color: #fff;
+    margin-left: 8px;
+
 }
  .overlay-content .card-btn{
     margin-top: 47px;
+    margin-left: 2px;
 }
 
 
@@ -625,21 +654,22 @@ header{
 
 .clip-wrapper{
     /* position: relative; */
-    min-height: 530px;
+    min-height: 550px;
     width: 100%;
-   background:  linear-gradient(298deg,
-    rgba(255, 255, 255, 1) 50%,
-      rgba(0, 0, 0, 0) 50%
-    ),
-    url("../images/clip-img.svg") center no-repeat;
+   background: linear-gradient(297deg,
+   rgba(255, 255, 255, 1) 50%,
+     rgba(0, 0, 0, 0) 50%
+   ),
+   url("../images/clip-img.svg") center no-repeat;
     background-size: cover;
 }
 .clip-wrapper .container{
     display: flex;
-    padding: 70px 15px;
+    padding: 80px 15px;
 }
 .clip-wrapper .container .col-left{
     width: 60%;
+    margin-left: -29px;
 }
 
 .clip-wrapper .container .col-left .section-heading{
@@ -649,6 +679,10 @@ header{
 .clip-wrapper .container .col-left .multi-line{
     margin-top: 22px;
 }
+.clip-wrapper .container .col-left .multi-line h3:not(:first-child){
+    margin-top: 10px;
+}
+
 .clip-wrapper .container .col-left .multi-line h3{
 color: #FFFFFF;
 }
@@ -659,15 +693,17 @@ color: #FFFFFF;
 .clip-wrapper .container .col-right{
     display: flex;
     width: 40%;
-    padding-left: 15px;
+    margin-left: 40px;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
+    position: relative;
+    top: 26px;
     /* border: 1px solid #A30023; */
 }
 .clip-wrapper .container .col-right .content-wrapper:not(:last-child){
-    margin-bottom: 45px;
+    margin-bottom: 42px;
 }
 
 .clip-wrapper .container .col-right .content-wrapper{
@@ -683,15 +719,15 @@ color: #FFFFFF;
  background-repeat: no-repeat;
  background-size: contain;
  position: absolute;
- top: 50%;
+ top: 47%;
  transform: translate(-50%, -50%);
- right: -30px;
+ right: -22px;
 }
 
 .clip-wrapper .container .col-right .content-wrapper .img-wrapper{
     width: 70px;
     height: 70px;
-    margin-right: 38px;
+    margin-right: 34px;
 }
 .clip-wrapper .container .col-right .content-wrapper .img-wrapper img{
     /* width: 100%; */
@@ -718,12 +754,15 @@ color: #FFFFFF;
 
 }
 .sidebar-section1 .container .article{
-    width: calc(100% - 390px);
+    width: calc(100% - 392px);
     padding-right:35px;
     /* background-color: #A30023; */
 }
 .sidebar-section1 .container .side{
-    min-width: 390px;
+    min-width: 392px;
+}
+.sidebar-section1 .side .side-gender-card{
+    padding: 21px 18px;
 }
 
 
@@ -740,7 +779,7 @@ color: #FFFFFF;
   /* ------ Side 1--------*/
   .sidebar-section1 .container .side .detail{
     background-color: #FAFAFA;
-    padding: 26px 46px;
+    padding: 27px 46px;
 }
 
 .sidebar-section1 .container .side .detail .detail-list{
@@ -780,7 +819,7 @@ color: #FFFFFF;
 
 /* ------- side2 section ---------*/
 .side2-section-wrapper {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 .side2-section-wrapper .container{
     display:flex;
@@ -790,7 +829,7 @@ color: #FFFFFF;
     padding-right:68px ;
 }
 .side2-section-wrapper .container .article p:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .side2-section-wrapper .container .article .secondary-heading{
     margin-bottom: 28px;
@@ -800,6 +839,10 @@ color: #FFFFFF;
     background-color: #FAFAFA;
     display: flex;
     justify-content: center;
+    border: 1px solid #EBEBEB;
+}
+.button-wrapper .btn-red{
+        padding: 12px 20px;
 }
 
 
@@ -809,12 +852,12 @@ color: #FFFFFF;
 }
 .side2-section-wrapper .container .sidebar .secondary-heading{
     max-width: 307px;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
 }
 .side2-section-wrapper .container .sidebar h3{
     color: #96AAB8;
     max-width: 380px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .side-pret{

@@ -5,7 +5,7 @@ $(document).ready(function () {
     spaceBetween: 30,
     // slidesPerGroup: 3,
     loop: true,
-    loopFillGroupWithBlank: true,
+    // loopFillGroupWithBlank: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -16,17 +16,13 @@ $(document).ready(function () {
       prevEl: ".notre-slider-wrapper .swiper-button-prev",
     },
     breakpoints: {
-      520: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      767: {
+      640: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
-      920: {
+      768: {
         slidesPerView: 2,
-
+        spaceBetween: 40,
       },
       1024: {
         slidesPerView: 3,
@@ -69,25 +65,27 @@ $(document).ready(function () {
   });
 
 
-  // var swiper = new Swiper(".mySwiper", {
-  //   slidesPerView: 1,
-  //   spaceBetween: 30,
-  //   // loop: true,
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    // loop: true,
 
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true
-  //   },
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev"
-  //   }
-  // });
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
 
   /*-------- DropDown Toggle --------*/
   // $("#dropdown").on('mouseover', function () {
-  //   $(".dropdown_content").slideToggle();
-  // });
+  //    $(".dropdown_content").slideToggle();
+  //  });
+
+
   $('.accordion').find('.accordion__header').click(function () {
     // Adds active class
     $(this).toggleClass('is-active');
@@ -154,3 +152,6 @@ $(document).ready(function () {
 
 
 
+function close_notification() {
+  document.getElementById("notification_wrapper").style.display = "none";
+}

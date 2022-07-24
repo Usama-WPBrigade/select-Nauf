@@ -180,8 +180,9 @@ ul:not([class]) > li:not([class]){
     font-size: 16px;
     line-height: 19px;
 }
-ul:not([class]) > li:not([class]):not(:last-child){
-    margin-right: 30px;
+ul:not([class]) > li:not([class]){
+    margin-right: 34px;
+    margin-left: 20px;
 }
 ul:not([class]) > li:not([class]):hover{
     border-bottom: 2px solid #A30023;
@@ -202,7 +203,8 @@ ul >li >ul{
         text-decoration: none;
     }
     ul >li >ul >li:not(:last-child){
-        padding-bottom:5px;
+        padding-bottom:0px;
+        margin-bottom: 0px;
     }
     ul >li >ul > .sub-dropdown{
         color: #fff!important;
@@ -213,13 +215,22 @@ ul >li >ul{
     }
     ul >li >ul > .sub-dropdown > ul{
         list-style: none;
-        margin-left: 16px;
+        margin-left: -3px;
     }
     ul >li >ul .sub-dropdown > ul li{
-        padding: 16px 0;
+        padding: 13px 0;
         border-bottom: none !important;
         
     }
+    .sub-dropdown > ul >li{
+        margin-top: 3px;
+        margin-bottom: 10px
+    }
+    
+    .sub-dropdown > ul >li:not(:first-child){
+        margin-top:-5px 
+    }
+    
     ul >li >ul >li >ul li >a{
         font-family: 'Roboto';
         font-style: normal;
@@ -247,6 +258,7 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
     cursor: pointer;
     border: none;
     outline: none;
+    border-radius: 3px;
 }
 .blue-btn:hover{
     background-color: #A30023;
@@ -264,6 +276,8 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
     width: max-content;
     color: #fff;
     max-width: 250px;
+    border-radius: 3px;
+
 }
 /* ---------  conatiner ------------*/
 .container{
@@ -285,6 +299,7 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
 }
 .serch-icon-btn .icon-wrapper{
     width: 27px;
@@ -305,7 +320,7 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
 }
 .side-gender-card .car-row1{
     display: flex;
-    margin-bottom: 18px;
+    margin-bottom: 7px;
 }
 .side-gender-card .car-row1 .content {
     position: relative;
@@ -322,7 +337,7 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
 }
 .side-gender-card .car-row1 .content h3{
     max-width: 190px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 .side-gender-card .car-row1 .content h3 span{
     color: #96AAB8;
@@ -359,7 +374,7 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
     font-size: 24px;
     line-height: 28px;
     color: #112B36;
-    margin-left: 15px;
+    margin-left: 17px;
 }
 .car-row2 .card-phone a::after{
     content: '';
@@ -375,7 +390,7 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
 }
 .card-icons{
     position: relative;
-    right: 18px;
+    right: 22px;
     display: flex;
 }
 .card-icons .c-btn:not(:last-child){
@@ -426,23 +441,24 @@ margin-right: 10px;
 
  .card-hidden-text{
     background-color: #112B36;
-    padding: 9px;
+    padding: 7px;
     color: #fff;
     z-index: 2;
     text-align: center;
     width: max-content;
-    right: -36px;
+    right: -38px;
     position: absolute;
     bottom: 60px;
     opacity: 0;
     transition: 0.3s all;
+    font-size: 14px;
 
 }
 .card-hidden-text::after{
     content: "";
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 55%;
     -webkit-transform: translate(-50%);
     transform: translate(-50%);
     margin-left: -5px;
@@ -469,6 +485,7 @@ margin-right: 10px;
     text-align: center;
     transition: 0.3s all;
     cursor: pointer;
+    border-radius: 3px;
     
 }
 
@@ -485,6 +502,8 @@ margin-right: 10px;
     text-align: center;
     transition: 0.3s all;
     cursor: pointer;
+    border-radius: 3px;
+
 }
 .overlay-card-btn:hover,
 .selection-card-btn:hover{
@@ -501,7 +520,18 @@ body .swiper {
     margin-right: auto;
   }
 /*_________________________ Base ______________________*/
-
+/* .xyz{
+    padding: 80px 0;
+    min-height: 500px;
+    background-color: #96AAB8;
+}
+.xyz .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #112B36;
+} */
 
 
 /*_________________________ table base style ______________________*/
@@ -570,21 +600,21 @@ table tr td{
 }
 .field-group label:not([class]), .label{
     background-color: #fff;
-    padding:16px 1px 13px 8px;
+    padding:16px 1px 16px 13px;
     border: none;
     
 }
 
 .field-group select{
     width: 100%;
-    padding: 15px 20px;
+    padding: 16px 17px 17px 17px;
     outline: none;
     border: none;
     -webkit-appearance: none;
     background-image: url('../images/form-arrow.svg');
     background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: 22px;
+    background-position-x: 92%;
+    background-position-y: 23px;
     cursor: pointer;
     font-family: 'Roboto';
     font-style: normal;
@@ -597,10 +627,10 @@ table tr td{
 
 .field-group input{
     width: 100%;
-    padding: 17px 20px;
+    padding: 18px 20px 19px 16px;
    outline: none;
    border: none;
-   text-transform: uppercase;
+   
 
 
 }
@@ -611,11 +641,12 @@ table tr td{
     font-size: 16px;
     line-height: 19px;
     color: #112B36;
+
     
 }
 .field-group .lable-right{
     background-color: #fff;
-    padding: 15px 15px 14px 15px;
+    padding: 16px 19px;
     border: none;
     cursor: pointer;
     border-right: 1px solid #EBEBEB;
@@ -636,7 +667,7 @@ label img{
 }
 .lable-icon-3{
     background-color: #fff;
-    padding: 16px 0px 13px 17px;
+    padding: 16px 0px 16px 17px;
     border: none;
 }
 
@@ -646,7 +677,7 @@ label img{
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    padding: 17px 29px;
+    padding: 18.5px 29px;
     background-color: #A30023;
     color: #FFFFFF;
     transition: 0.3s all;
