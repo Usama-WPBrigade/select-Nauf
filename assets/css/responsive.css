@@ -21,6 +21,17 @@
  .clip-wrapper .container .col-left .multi-line h3{
     color: #112B36;
  }
+ .rej-section-wrapper .container .hand-section .col-left{
+    padding-top:18px;
+    margin-left: 0px;
+}
+.rej-section-wrapper .container .hand-section .col-right{
+    margin-left: 0px;
+}
+.desktop-section{
+    margin-left: 0px;
+}
+
     
 }
 @media screen and (max-width:1200px) {
@@ -30,6 +41,9 @@
     }
     .clip-wrapper .container .col-right .content-wrapper::after{
         display: none;
+    }
+    .situation-inner-wrapper{
+        max-width: 100%;
     }
 }
 
@@ -396,7 +410,4 @@ display: block;
         padding: 0 10px;
     }
   
-}
- .importantSection-wrapper, .rej-section-wrapper, .footer{
-    display: none;
 }
