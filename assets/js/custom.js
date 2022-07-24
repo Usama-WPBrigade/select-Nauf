@@ -131,7 +131,7 @@ $(document).ready(function () {
   });
 
   var swiper = new Swiper(".genderslider", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     slidesPerGroup: 1,
     loop: true,
@@ -144,6 +144,20 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+      },
+      767: {
+        slidesPerView: 2,
+      },
+      920: {
+        slidesPerView: 2,
+      },
+      1100: {
+        slidesPerView: 3,
+      },
+    }
   });
 
 

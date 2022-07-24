@@ -90,8 +90,22 @@ display: block;
     opacity: 0.7;
 }
 
-
-
+.sidebar3-section-wrapper .container .article{
+    width: 100%;
+    margin-top: 0;
+}
+.sidebar3-section-wrapper .container .article .accordin-wrapper{
+    padding-right: 0;
+}
+.sidebar3-section-wrapper .container .side{
+    display: none;
+}
+.bottom-form-conatiner .form-bottom-field-group{
+    width: 100%;
+}
+.bottom-form-conatiner .form-bottom-field-group .field-group select{
+    background-position-x: 97%;
+}
 }
 @media screen and (max-width:920px) {
     .menu-btn{
@@ -346,10 +360,43 @@ display: block;
     .button-wrapper{
         padding: 18px;
     }
-   
+    .situation-content, .situation-content .situation-inner-list{
+        width: 100%;
+        margin: 0;
+    }
+    .bottom-form-conatiner{
+        display: none;
+    }
+    .bottom-form-conatiner {
+        display: none;
+    }
+    .bottom-form-wraper .all-cards-wrapper .genderslider .side-gender-card{
+        width: 100%;
+    }
+    .bottom-form-wraper .all-cards-wrapper .genderslider .side-gender-card .card-hidden-text{
+        display: none;
+    }
+    .all-cards-wrapper .side-gender-card{
+        border: 1px solid #DEDEDE;
+    }
+    .all-cards-wrapper .swiper-button-next, .all-cards-wrapper .swiper-button-prev{
+        display: block;
+        position: absolute;
+        top: 50%;
+    
+    }
+    .all-cards-wrapper .swiper-button-next{
+        right: -11px;
+    }
+    .all-cards-wrapper .swiper-button-prev{
+        left: 2px;
+    }
+
+    .all-cards-wrapper{
+        padding: 0 10px;
+    }
   
 }
-
-.container, .bottom-form-wraper, .importantSection-wrapper, .rej-section-wrapper, .footer{
+ .importantSection-wrapper, .rej-section-wrapper, .footer{
     display: none;
 }

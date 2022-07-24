@@ -1069,8 +1069,14 @@ color: #FFFFFF;
     margin-top: 41px;
 }
 
-.all-cards-wrapper{
+.all-cards-wrapper {
     margin-top: 41px;
+    position: relative;
+}
+.all-cards-wrapper .swiper-button-next, .all-cards-wrapper .swiper-button-prev{
+    position: absolute;
+    top: 0;
+
 }
 .all-cards-wrapper .side-gender-card{
     border-top: 1px solid #DEDEDE;
@@ -1081,7 +1087,7 @@ color: #FFFFFF;
 }
 
 .all-cards-wrapper .genderslider .swiper-wrapper .swiper-slide {
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px;
     background: #fff;
 
@@ -1099,7 +1105,29 @@ color: #FFFFFF;
     -webkit-align-items: center;
     align-items: center;
   }
+  .all-cards-wrapper .swiper-button-next, .all-cards-wrapper .swiper-button-prev{
+display: none;
+  }
 
+  .all-cards-wrapper .swiper-pagination{
+    position: absolute;
+    bottom: -35px;
+  }
+  .all-cards-wrapper .swiper-pagination .swiper-pagination-bullet{
+    background-color: #C7C7C7;
+    width: 8px;
+    height: 8px;
+    border-radius: 14px;
+    transition: 0.5s all ease;
+  }
+  
+  .all-cards-wrapper .swiper-pagination .swiper-pagination-bullet-active{
+    width: 41px;
+    height: 8px;
+    background-color: #A30023;
+    cursor: auto;
+
+  }
 /* <!--- important section ----> */
 .importantSection-wrapper{
     margin: 80px 0;
