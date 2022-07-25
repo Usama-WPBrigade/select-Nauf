@@ -140,10 +140,7 @@ header .container .menu ul #dropdown{
         padding: 24px 20px;
         z-index: 2;
         display: none;
-
-
 }
-
 
 .header .container .menu ul >li >a {
     position: relative;
@@ -159,10 +156,9 @@ header .container .menu ul #dropdown{
     top: 30px;
     left: 0%;
     background-color: #A30023;
-        transition: 0.3s all;
+    transition: 0.3s all;
 
 }
-
 .header .container .menu ul >li >a:hover::after {
     width: 100%;
 }
@@ -493,10 +489,31 @@ header{
     padding-bottom: 14px;
     margin-top: -26px;
 }
-.notre-wrapper .notre-slider-wrapper .swiper .swiper-slide:hover 
+/* .notre-wrapper .notre-slider-wrapper .swiper .swiper-slide:hover 
 .content-part {
     border-bottom: 2px solid #A30023;
+} */
+
+.notre-wrapper .notre-slider-wrapper .swiper .swiper-slide{
+    position: relative;
 }
+.notre-wrapper .notre-slider-wrapper .swiper .swiper-slide::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #A30023;
+    left: 0;
+    position: absolute;
+    top: 99%;
+    transition: 0.3s all;
+}
+.notre-wrapper .notre-slider-wrapper .swiper .swiper-slide:hover::after{
+    width:100%;
+    top: 99%;
+}
+
+
+
 .swiper-button-next::after, .swiper-button-prev::after{
     display: none;
 }
