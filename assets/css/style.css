@@ -107,6 +107,8 @@
     padding: 16px 0;
     background-color: #fff;
     z-index: 100;
+    position: sticky;
+    top: 0;
 }
 .header .container{
     display: flex;
