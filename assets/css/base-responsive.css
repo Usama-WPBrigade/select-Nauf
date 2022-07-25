@@ -37,3 +37,43 @@ ul:not([class]) > li:not([class]){
     display: block;
 }
 }
+@media screen and (max-width:520px) {
+
+body button:not([class]), .btn, .blue-btn, .btn-red{
+    font-size: 15px;
+}
+.selection-card-btn{
+padding: 9px 19px;
+
+}
+body p{
+    font-size: 14px;
+line-height: 16px;
+}
+.btn-mes, .btn-gender{
+    width: 24px;
+    height: 24px;
+
+}
+.card-icons{
+    right: 0;
+}
+.btn-mes .icons-wrapper{
+    width:10.43px;
+    height:8.35px;
+    display: flex;
+}
+.btn-gender .icons-gender-wrapper{
+    height: 9px;
+    width: 9px;
+    display: flex;
+}
+h3{
+    font-size: 20px;
+    list-style: 24px;
+}
+body .normal-heading{
+    font-size: 18px;
+line-height: 21px;
+}
+}

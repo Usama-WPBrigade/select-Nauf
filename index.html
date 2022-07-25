@@ -68,8 +68,12 @@
           <nav class="menu" id="menu">
             <ul>
                 <li id="dropdown"><a href="#">ACHETER</a>
+                    <button class="mobile-menu-down">
+                        <img src="assets/images/mobile-menu-down.svg" alt="">
+                    </button>
                     <ul class="dropdown_content">
                         <li class="sub-dropdown">Dekasufelig.
+                           
                             <ul>
                                 <li><a href="#">Lorem Ipsum</a></li>
                             </ul>    
@@ -382,8 +386,8 @@
              <h3 class="col-top-heading">ACHETER POUR Y VIVRE</h3>
              <h2 class="primary-heading main-heading">VOUS SOUHAITEZ <br/><strong> DEVENIR PROPRIÉTAIRE?</strong></h2>
              <h3 class="basic-text">VOUS ÊTES LOCATAIRE(S) ET SOUHAITEZ ACCÉDER À LA PROPRIÉTÉ ?</h3>
-             <h3 class="basic-text">VOUS ÊTES EN COUPLE ET VOUS AVEZ ENVIE D’ACHETER À DEUX ?</h3>
-             <h3 class="basic-text">VOUS SOUHAITEZ DÉMÉNAGER CAR VOTRE FAMILLE S’AGRANDIT ?</h3>
+             <h3 class="basic-text MBH">VOUS ÊTES EN COUPLE ET VOUS AVEZ ENVIE D’ACHETER À DEUX ?</h3>
+             <h3 class="basic-text MBH">VOUS SOUHAITEZ DÉMÉNAGER CAR VOTRE FAMILLE S’AGRANDIT ?</h3>
              <p>Nous étudions vos possibilités de financement (PTZ, prêt action logement 1%,prêt d’accession sociale).</p>
              <a href="#" class="overlay-card-btn  card-btn hidden-desk">FAIRE UNE SIMULATION EN LIGNE</a>
              
@@ -445,6 +449,15 @@
       </div>
   </section>
 
+  <section class="open-img" id="open-img">
+    <button class="btn-close-img" id="btn-close-img" onclick="closeimg()">
+        <img src="assets/images/notification-close-bg.png" alt="">
+    </button>
+    <div class="open-img-wrapper">
+        <img src="assets/images/here-section-back.jpg" alt="">
+    </div>
+  </section>
+
   <!-------------- SideBar Section 1----------------->
   <section class="sidebar-section1">
       <div class="container">
@@ -455,7 +468,7 @@
                         <!-- slide 1-->
                       <div class="swiper-slide" style="background:
                       linear-gradient(0deg, rgba(17, 43, 54, 0.3), rgba(17, 43, 54, 0.3)), url('assets/images/here-section-back.jpg') no-repeat; background-size: cover;">
-                        <button class="serch-icon-btn">
+                        <button class="serch-icon-btn" onclick="openimg()">
                             <div class="icon-wrapper">
                                 <!-- <img src="assets/images/search-btn-icon.svg" alt=""> -->
                             </div>
@@ -465,7 +478,7 @@
                          <!-- slide 2-->
                       <div class="swiper-slide" style="background:
                       linear-gradient(0deg, rgba(17, 43, 54, 0.3), rgba(17, 43, 54, 0.3)), url('assets/images/here-section-back.jpg') no-repeat; background-size: cover;">
-                        <button class="serch-icon-btn">
+                        <button class="serch-icon-btn" onclick="openimg()">
                             <div class="icon-wrapper">
                                 <!-- <img src="assets/images/search-btn-icon.svg" alt=""> -->
                             </div>
@@ -475,22 +488,22 @@
                          <!-- slide 3-->
                       <div class="swiper-slide" style="background:
                       linear-gradient(0deg, rgba(17, 43, 54, 0.3), rgba(17, 43, 54, 0.3)), url('assets/images/here-section-back.jpg') no-repeat; background-size: cover;">
-                        <button class="serch-icon-btn">
+                        <button class="serch-icon-btn" onclick="openimg()">
                             <div class="icon-wrapper">
                                 <!-- <img src="assets/images/search-btn-icon.svg" alt=""> -->
                             </div>
                         </button>
                         </div>
                     </div>
-                    <div class="swiper-button-next">
-                        <img src="assets/images/NS-slider-arrow-next.png" alt="">
-                    </div>
-                    <div class="swiper-button-prev">
-                        <img src="assets/images/NS-slider-arrow-prev.png" alt="">
-                    </div>
+                   
                     <!-- <div class="swiper-pagination"></div> -->
                   </div>
-              
+                  <div class="swiper-button-next">
+                    <img src="assets/images/NS-slider-arrow-next.png" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="assets/images/NS-slider-arrow-prev.png" alt="">
+                </div>
               </div>
           </div>
           
@@ -915,11 +928,11 @@
     <div class="container">
         <h2>POURQUOI <strong>ACHETER NEUF ?</strong></h2>
 
-        <div class="important-slider-wrapper">
-            <div class="swiper importantSlider">
-                <!-- <div class="section-line"></div> -->
-                <div class="swiper-wrapper bar-line">
+        <div class="time-line-wrapper">
+            <div class="swiper timeLineSlider">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide">
+
                         <!-- important section 1-->
                     <div class="imp-content">
                         <h5 class="important-main-heading odd-heading">CONFORT DU NEUF</h5>
@@ -934,26 +947,9 @@
                         </div>
                     </div>
                  
-                </div>
+                  </div>
 
-                <div class="swiper-slide">
-                        <!-- important section 2-->
-                    <div class="imp-content">
-                        <h5 class="important-main-heading odd-heading">ACHAT SÉCURISÉ</h5>
-                        <div class="secondayHead-details even-secondhead">
-                           <div class="content">
-                               <h3>ACQUISITION ENCADRÉE</h3>
-                               <p>Acheter du neuf c’est faire une acquisition encadrée légalement avec un paiement échelonné.</p>
-                           </div>
-                           <div class="imp-img-wrapper">
-                            <img src="assets/images/important-icon-2.svg" alt="">
-                        </div>
-                        </div>
-                    </div>
-                 
-                </div>
-
-                <div class="swiper-slide">
+                  <div class="swiper-slide">
                     <!-- important section 1-->
                 <div class="imp-content">
                     <h5 class="important-main-heading odd-heading">CONFORT DU NEUF</h5>
@@ -968,10 +964,9 @@
                     </div>
                 </div>
              
-            </div>
+              </div>
 
-
-            <div class="swiper-slide">
+              <div class="swiper-slide">
                 <!-- important section 1-->
             <div class="imp-content">
                 <h5 class="important-main-heading odd-heading">CONFORT DU NEUF</h5>
@@ -986,6 +981,39 @@
                 </div>
             </div>
          
+          </div>
+
+          <div class="swiper-slide">
+            <!-- important section 1-->
+        <div class="imp-content">
+            <h5 class="important-main-heading odd-heading">CONFORT DU NEUF</h5>
+            <div class="secondayHead-details even-secondhead">
+               <div class="content">
+                   <h3>HABITATION AUX NORMES</h3>
+                   <p>Les normes BBC/RT2012 vous garantissent confort acoustique, thermique et normes de sécurité.</p>
+               </div>
+               <div class="imp-img-wrapper">
+                <img src="assets/images/important-icon-1.svg" alt="">
+            </div>
+            </div>
+        </div>
+     
+      </div>
+      <div class="swiper-slide">
+        <!-- important section 1-->
+    <div class="imp-content">
+        <h5 class="important-main-heading odd-heading">CONFORT DU NEUF</h5>
+        <div class="secondayHead-details even-secondhead">
+           <div class="content">
+               <h3>HABITATION AUX NORMES</h3>
+               <p>Les normes BBC/RT2012 vous garantissent confort acoustique, thermique et normes de sécurité.</p>
+           </div>
+           <div class="imp-img-wrapper">
+            <img src="assets/images/important-icon-1.svg" alt="">
+        </div>
+        </div>
+    </div>
+ 
         </div>
 
         <div class="swiper-slide">
@@ -1003,19 +1031,23 @@
             </div>
         </div>
      
-        </div>
-               
+            </div>
+                 
                 </div>
-               
-              </div>
-              <div class="swiper-button-next">
-                <img src="assets/images/NS-slider-arrow-next.png" alt="">
             </div>
-            <div class="swiper-button-prev">
-                <img src="assets/images/NS-slider-arrow-prev.png" alt="">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next">
+            <img src="assets/images/NS-slider-arrow-next.png" alt="">
+        </div>
+        <div class="swiper-button-prev">
+            <img src="assets/images/NS-slider-arrow-prev.png" alt="">
 
-            </div>
-            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        </div>
+            
+        
+        </div>
+
         </div>
         
     </div>
@@ -1108,15 +1140,22 @@
 
                       
                     </div>
-                    <div class="swiper-button-next">
+                    <!-- <div class="swiper-button-next">
                         <img src="assets/images/NS-slider-arrow-next.png" alt="">
                     </div>
                     <div class="swiper-button-prev">
                         <img src="assets/images/NS-slider-arrow-prev.png" alt="">
 
-                    </div>
+                    </div> -->
                     <!-- <div class="swiper-pagination"></div> -->
                   </div>
+                  <div class="swiper-button-next">
+                    <img src="assets/images/NS-slider-arrow-next.png" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="assets/images/NS-slider-arrow-prev.png" alt="">
+
+                </div>
             </div>
             <div class="col-accordine  bottom-col">
                 <div class="desktop-section">
