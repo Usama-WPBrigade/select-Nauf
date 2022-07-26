@@ -32,7 +32,10 @@ body .secondary-heading{
     
 }
 @media screen and (max-width:767px) {
-
+    ul:not([class]) > li:not([class]){
+        margin-right: 10px !important;
+        margin-left: 10px;
+    }
 ul:not([class]) > li:not([class]){
     display: block;
 }

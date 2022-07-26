@@ -1829,3 +1829,23 @@ transition: 0.3s all;
     max-width: 30px;
     max-height: 30px;
 }
+
+.header .container .menu::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    height: 20%;
+
+
+  }
+  
+  .header .container .menu::-webkit-scrollbar{
+    width: 6px;
+    background-color: #F5F5F5;
+    height: 20%;
+  }
+  
+  .header .container .menu::-webkit-scrollbar-thumb{
+    background-color: #A30023;
+    height: 20%;
+  }
