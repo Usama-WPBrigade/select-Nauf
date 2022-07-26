@@ -626,6 +626,7 @@ table tr td{
     font-size: 16px;
     line-height: 19px;
     color: #112B36;
+    text-transform: capitalize;
     border-right: 1px solid #EBEBEB;
 }
 
@@ -634,6 +635,8 @@ table tr td{
     padding: 18px 20px 19px 16px;
    outline: none;
    border: none;
+   text-transform: capitalize;
+
    
 
 
