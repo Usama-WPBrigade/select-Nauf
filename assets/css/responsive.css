@@ -51,7 +51,10 @@
         .time-line-wrapper .timeLineSlider .swiper-wrapper .swiper-slide:nth-of-type(even) .imp-content{
     
             padding-top:0 
-        }    
+        }  
+        .importantSection-wrapper .swiper-button-next, .importantSection-wrapper .swiper-button-prev{ 
+            display: block;
+        }  
 }
 
 @media screen and (max-width:1024px) {
@@ -175,7 +178,12 @@ margin-top: 50px;
 .SelectNeuf-card-wrapper .SelectNeufSlder .swiper-wrapper{
     flex-wrap: nowrap;
     }
+
+
 }
+
+
+
 @media screen and (max-width:920px) {
     .menu-btn{
       padding: 10px;
@@ -227,6 +235,8 @@ margin-top: 50px;
         margin-right: 0;
         margin-bottom: 31px;
     }
+ 
+ 
    
     
 }
