@@ -936,6 +936,12 @@ margin-top: 50px;
         padding-top: 0px;
         padding-left: 0px;
     }
+    .time-line-wrapper .timeLineSlider .swiper-wrapper .swiper-slide:nth-of-type(odd) .imp-content{
+        padding-bottom: 0;
+    }
+    .importantSection-wrapper {
+        margin: 40px 0;
+    }
    
 }
 
