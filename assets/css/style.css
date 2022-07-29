@@ -116,11 +116,10 @@
     /* border: 1px solid red; */
 }
 .header .container .logo-wrapper{
-    width:163px;
-    height:57px;
+    max-width:163px;
+    min-height:57px;
     display: flex;
     align-items: center;
-    margin-top:2px;
 }
 .header .container .logo-wrapper img{
     object-fit: contain;
@@ -146,7 +145,6 @@ header .container .menu ul #dropdown{
 .header .container .menu ul >li >a {
     position: relative;
     transition: 0.3s all;
-    padding-bottom: 10px
 }
 
 .header .container .menu ul >li > a::after {
