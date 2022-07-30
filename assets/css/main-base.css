@@ -330,8 +330,8 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
     position: relative;
 }
 .side-gender-card .car-row1 .gender-img-wrapper{
-    width: 125px;
-    height: 125px;
+    min-width: 125px;
+    max-height: 125px;
     margin-right: 18px;
 }
 .side-gender-card .car-row1 .gender-img-wrapper img{
@@ -359,6 +359,7 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
     background-image: url('../images/card-location-icon.svg');
     position: absolute;
     left: -19px;
+    top: 0;
 }
 .side-gender-card .content .text{
     color: #96AAB8;
