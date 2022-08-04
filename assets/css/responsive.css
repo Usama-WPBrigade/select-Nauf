@@ -389,6 +389,9 @@ margin-top: 50px;
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
     }
     header .container .menu ul #dropdown:hover .dropdown_content{
         display: none;
@@ -398,6 +401,7 @@ margin-top: 50px;
         height: 2px;
         background-color: #112B36;
         transition: all 0.5s ease-in-out;
+        
     }
    .openmenu .menu_bar1{
         transform: rotate(-45deg) translate(0px, 6px);
