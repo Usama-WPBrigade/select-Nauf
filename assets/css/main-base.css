@@ -88,7 +88,6 @@
     font-display: swap;
 }
 
-
 *{
     padding: 0;
     margin: 0;
@@ -97,12 +96,9 @@
 .overflowbody{
     overflow: hidden;
 }
-/* img{
-    width: 100%;
-    height: 100%;
-} */
+
 body h1, h2{
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 48px;
     line-height: 57px;
@@ -112,25 +108,25 @@ body h1, h2{
 body strong{
     font-weight: bold;
     font-style: italic;
-    font-family: "DIN Pro Cond";
+    font-family: "DIN Pro Cond",Arial, Helvetica, sans-serif;
 
 }
 body .primary-heading{
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 300;
     font-size: 48px;
     line-height: 56px;
 }
 body .secondary-heading{
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight:normal;
     font-size: 38px;
     line-height: 45px;
 }
 body .normal-heading{
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -138,7 +134,7 @@ body .normal-heading{
 }
 
 body h3, .h3{
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 24px;
@@ -159,7 +155,7 @@ body .light-text, .dark-text{
 
 }
 body p, a{
-    font-family: 'Roboto';
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -177,7 +173,7 @@ ol, ul:not([class]){
 ul:not([class]) > li:not([class]){
     display: inline-block;
     padding-bottom: 10px;
-    font-family: 'Roboto';
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -187,9 +183,6 @@ ul:not([class]) > li:not([class]){
     margin-right: 34px;
     margin-left: 20px;
 }
-/* ul:not([class]) > li:not([class]) a:hover{
-    border-bottom: 1px solid #A30023;
-} */
 
 
 ul:not([class]) > li:not([class]) > a{
@@ -236,7 +229,7 @@ ul >li >ul{
     }
     
     ul >li >ul >li >ul li >a{
-        font-family: 'Roboto';
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -250,7 +243,7 @@ ul >li >ul{
     }
     
 body button:not([class]), .btn, .blue-btn, .btn-red{
-    font-family: 'Roboto';
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -371,9 +364,9 @@ body button:not([class]), .btn, .blue-btn, .btn-red{
     align-items: center;
 }
 .car-row2 .card-phone{
-    /* margin-left: 20px; */
+
     position: relative;
-    font-family: 'DIN Pro cond';
+    font-family: 'DIN Pro cond',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -474,12 +467,9 @@ margin-right: 10px;
 
 .btn-gender:hover .card-hidden-text{
     opacity: 1;
-
-
 }
-
 .overlay-card-btn   {
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 24px;
@@ -496,7 +486,7 @@ margin-right: 10px;
 
 
 .selection-card-btn{
-    font-family: 'Roboto';
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -621,7 +611,7 @@ table tr td{
     background-position-x: 92%;
     background-position-y: 23px;
     cursor: pointer;
-    font-family: 'Roboto';
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -643,7 +633,7 @@ table tr td{
 
 }
 .field-group input[type = text]::placeholder{
-    font-family: 'Roboto';
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -680,7 +670,7 @@ label img{
 }
 
 .field-group input[type = submit]{
-    font-family: 'Roboto';
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -712,19 +702,13 @@ label img{
 }
 .imp-content .important-main-heading{
     max-width:142px;
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
     text-align: center;
     color: #D2DFE8;
-
-    /* position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
-    bottom: -60%; */
 
 }
 .imp-content .secondayHead-details{
@@ -747,7 +731,7 @@ label img{
     margin-bottom: 13px;
 }
 .imp-content .secondayHead-details .content p{
-    font-family: 'Roboto';
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

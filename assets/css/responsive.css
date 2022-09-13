@@ -178,11 +178,7 @@ margin-top: 50px;
 .SelectNeuf-card-wrapper .SelectNeufSlder .swiper-wrapper{
     flex-wrap: nowrap;
     }
-
-
 }
-
-
 
 @media screen and (max-width:920px) {
     .menu-btn{

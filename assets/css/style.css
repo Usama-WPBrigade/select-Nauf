@@ -22,7 +22,7 @@
 
 }
 .notification_wrapper .container p{
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -65,7 +65,7 @@
 }
 
 .selection-wrapper .container .select_wrapper p{
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -177,7 +177,6 @@ header{
 
 /* --------------------- Hero section Section----------------------*/
 .hero-wrapper{
-    height: 790px;
     background:linear-gradient(295deg,
     #112B36 50.5%,
       rgba(0, 0, 0, 0) 50%
@@ -219,7 +218,7 @@ header{
     background: #112B36;
     padding: 9px 10px;
     position: absolute;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -256,12 +255,10 @@ header{
 .hero-bottom-content{
     color: #D2DFE8;
     margin-left: auto;
-    position: relative;
-    left: 17px;
-    top: 2px;
+ 
 }
 .hero-bottom-content span{
-    font-family: 'DIN Pro cond';
+    font-family: 'DIN Pro cond',Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 48px;
@@ -447,17 +444,11 @@ header{
 .content-part .content-wrapper{
     max-width: 255px;
     margin: 0 auto;
-    /* padding-bottom: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center; */
 
 }
 .content-part .content-wrapper a{
     text-decoration: none;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 16px;
@@ -466,7 +457,7 @@ header{
     color: #112B36;
 }
 .content-part .content-wrapper p{
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 16px;
@@ -475,7 +466,7 @@ header{
     color:#96AAB8;
 }
 .content-part .content-wrapper p span{
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 16px;
@@ -491,10 +482,6 @@ header{
     padding-bottom: 14px;
     margin-top: -26px;
 }
-/* .notre-wrapper .notre-slider-wrapper .swiper .swiper-slide:hover 
-.content-part {
-    border-bottom: 2px solid #A30023;
-} */
 
 .notre-wrapper .notre-slider-wrapper .swiper .swiper-slide{
     position: relative;
@@ -963,7 +950,7 @@ color: #FFFFFF;
 
   
   .accordion__header h2 {
-    font-family: 'DIN Pro cond';
+    font-family: 'DIN Pro cond',Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1016,7 +1003,7 @@ color: #FFFFFF;
     display: none;
     /* padding: 18px 0px 27px 0px; */
     border-top: 0;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1457,7 +1444,7 @@ margin-top: 20px;
 }
 
 .desktop-section .disclousers-wrapper h2{
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 700;
     font-size: 36px;
@@ -1498,7 +1485,7 @@ margin-top: 20px;
 
 .accredition-link{
     
-font-family: 'Roboto';
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -1558,7 +1545,7 @@ transition: 0.3s all;
 
   
   .mobile-accordion__header h2 {
-    font-family: 'DIN Pro Cond';
+    font-family: 'DIN Pro Cond',Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 18px;
@@ -1604,7 +1591,7 @@ transition: 0.3s all;
   }
   .mobile-accordion__body p{
       color: #112b36;
-      font-family: 'Roboto';
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1694,7 +1681,7 @@ transition: 0.3s all;
     margin-bottom: 22px;
     width: 100%;
     padding: 11px 15px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
