@@ -1826,8 +1826,6 @@ transition: 0.3s all;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: #F5F5F5;
     height: 20%;
-
-
   }
   
   .header .container .menu::-webkit-scrollbar{
@@ -1840,3 +1838,15 @@ transition: 0.3s all;
     background-color: #A30023;
     height: 20%;
   }
+
+  #dropdown .list-level-list::before{
+    content: '';
+    width:100%;
+    height: 100px;
+    top: 100%;
+    left:0;
+    z-index: 100;
+    position: absolute;
+    background-color:rgba(0,0,0,0);
+    cursor: pointer;
+}
